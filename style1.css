@@ -1,0 +1,82 @@
+.window{
+    display:flex;
+    overflow:hidden;
+    width:820px;
+    position: relative;
+    border:1px solid #FEFEFE;
+    margin:0 auto;
+  
+  }
+  
+  .container{
+    background-color: #fff;
+     border:1px solid #FEFEFE;
+     background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 64%,#f3f3f3 64%,#ededed 65%,#ffffff 97%);
+  
+  }
+  
+  
+  .icon {
+         width: 100px; 
+         height: 100px;
+         vertical-align: -0.15em;
+         fill: currentColor;
+         overflow: hidden;
+      }
+  
+  
+  img{
+    transition:all 1s;
+    transform:translate(-820px);
+     
+  }
+  
+  .nextOrprevious >.icon{
+    display:flex;
+    background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 64%,#f3f3f3 64%,#ededed 65%,#ffffff 97%);
+    background: rgb(0,0,0,0.5);
+  }
+  
+  .nextOrprevious > #previous{
+    position: absolute;
+    left:20%;
+    top: 25%;
+  }
+  .nextOrprevious > #next{
+    position: absolute;
+    right:20%;
+    top: 25%;
+  }
+  
+  
+  
+  .number{
+     display:flex;
+    background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 64%,#f3f3f3 64%,#ededed 65%,#ffffff 97%);
+  width:inherit;
+     justify-content:center;
+  
+  
+  }
+  
+  
+  
+  
+  .number>.icon{
+    display:flex;
+    width: 70px; 
+    height: 50px;
+    color: grey;
+    border:1px solid #FEFEFE;
+    background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 64%,#f3f3f3 64%,#ededed 65%,#ffffff 97%);
+    padding:10px;
+    border-radius:15px;
+  }
+  .number>.icon .hover,
+  .number>.icon:hover{
+     background: #FBFBFB;
+  }
+  .nextOrprevious >.icon .hover,
+  .nextOrprevious >.icon:hover{
+     background: #FBFBFB;
+  }
