@@ -1,3 +1,4 @@
+
 makeFakeSlides();
 var number=$('.number>svg');
 var next=$('#next');
@@ -13,12 +14,12 @@ previousImg();
 autoslide();
  
   
-$('.container').on('mouseleave',function(){
+$('.slide-wrapper').on('mouseleave',function(){
   autoslide()
   console.log($('number.icon'[n]))
  
 })
-$('.container').on('mouseenter',function(){
+$('.slide-wrapper').on('mouseenter',function(){
     clearInterval(timer)
 })
 
@@ -115,6 +116,6 @@ function previousImg(){
 function makeFakeSlides(){
   let $firstCopy = $('img').eq(0).clone(true)
   let $lastCopy = $('img').eq($('img').length-1).clone(true)
-  $('.window').append($firstCopy)
-  $('.window').prepend($lastCopy)
+  $('.show').append($firstCopy)
+  $('.show').prepend($lastCopy)
 }

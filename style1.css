@@ -1,22 +1,43 @@
+.slide-wrapper{
+  background: white;
+}
+
 .window{
-    display:flex;
-    overflow:hidden;
-    width:820px;
-    position: relative;
-    border:1px solid #FEFEFE;
-    margin:0 auto;
+  display:flex;
+  overflow:hidden;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.show{
+width:820px;
+display:flex;
+overflow:hidden;
   
+}
+
+  img{
+    transition:all 1s;
+    transform:translate(-820px);
+     
   }
-  
-  .container{
-    background-color: #fff;
-     border:1px solid #FEFEFE;
-     background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 64%,#f3f3f3 64%,#ededed 65%,#ffffff 97%);
-  
+
+  .number{
+    text-align: center;
+   border-bottom:1px solid #FEFEFE;
   }
-  
-  
-  .icon {
+
+#next-wrapper:hover,
+#previous-wrapper:hover{
+  padding:100px 0;
+    border-radius:15px;
+  background: rgba(0,0,0,0.1);
+}
+
+
+
+
+ .icon {
          width: 100px; 
          height: 100px;
          vertical-align: -0.15em;
@@ -24,59 +45,26 @@
          overflow: hidden;
       }
   
-  
-  img{
-    transition:all 1s;
-    transform:translate(-820px);
-     
-  }
-  
-  .nextOrprevious >.icon{
-    display:flex;
-    background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 64%,#f3f3f3 64%,#ededed 65%,#ffffff 97%);
-    background: rgb(0,0,0,0.5);
-  }
-  
-  .nextOrprevious > #previous{
-    position: absolute;
-    left:20%;
-    top: 25%;
-  }
-  .nextOrprevious > #next{
-    position: absolute;
-    right:20%;
-    top: 25%;
-  }
-  
-  
-  
-  .number{
-     display:flex;
-    background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 64%,#f3f3f3 64%,#ededed 65%,#ffffff 97%);
-  width:inherit;
-     justify-content:center;
-  
-  
-  }
-  
-  
-  
-  
-  .number>.icon{
-    display:flex;
+
+ .number>.icon{
     width: 70px; 
     height: 50px;
     color: grey;
-    border:1px solid #FEFEFE;
-    background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 64%,#f3f3f3 64%,#ededed 65%,#ffffff 97%);
     padding:10px;
     border-radius:15px;
   }
-  .number>.icon .hover,
+  .number>.icon .active,
   .number>.icon:hover{
+     background: rgba(0,0,0,0.1);
+  }
+
+ #previous >.icon:hover{
      background: #FBFBFB;
   }
-  .nextOrprevious >.icon .hover,
-  .nextOrprevious >.icon:hover{
-     background: #FBFBFB;
-  }
+
+
+
+
+
+
+
