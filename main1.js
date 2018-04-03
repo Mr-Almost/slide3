@@ -1,4 +1,4 @@
-document.location.reload(true);
+
 makeFakeSlides();
 var number=$('.number>svg');
 var next=$('#next');
