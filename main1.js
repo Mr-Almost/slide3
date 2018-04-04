@@ -1,4 +1,3 @@
-
 makeFakeSlides();
 var number=$('.number>svg');
 var next=$('#next');
@@ -8,6 +7,7 @@ var $images=$('img');
 var width = $images[0].width;
 var distance=-width;
 var timeset=1;
+ $(number[0]).addClass('active')
 num(number,distance);
 nextImg();
 previousImg();
@@ -15,8 +15,8 @@ autoslide();
  
   
 $('.slide-wrapper').on('mouseleave',function(){
-  autoslide()
-  console.log($('number.icon'[n]))
+  autoslide();
+
  
 })
 $('.slide-wrapper').on('mouseenter',function(){
@@ -27,11 +27,12 @@ $('.slide-wrapper').on('mouseenter',function(){
 
 
 
-
 function autoslide(){
   timer=setInterval(()=>{
   next.click()
+  
 },2500)
+   
 }
 
 function nextImg(){
@@ -56,7 +57,7 @@ function nextImg(){
        }).show()
         })
    }
-    
+   addActive();
 
  })
 }
@@ -87,10 +88,11 @@ function previousImg(){
         })
       
    }     
-        
+ addActive();
 
 })
 }
+
 
 
  function num(number,distance){
@@ -102,13 +104,15 @@ function previousImg(){
   $('img').css({
       transform:'translate('+p+'px)'
   })
-
-})
+ addActive()
+});
 }
   
 } 
 
-
+function addActive(){
+   $(number[n]).addClass('active').siblings('.active').removeClass('active')
+}
 
                 
 

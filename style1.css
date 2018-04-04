@@ -53,18 +53,15 @@ overflow:hidden;
     padding:10px;
     border-radius:15px;
   }
-  .number>.icon .active,
-  .number>.icon:hover{
-     background: rgba(0,0,0,0.1);
+.number .active
+{ background: rgba(0,0,0,0.1);
+  transition:all 1s;
+}
+.number>.icon:hover{
+  background: rgba(0,0,0,0.1);
+  transition:all 0.5s;
   }
 
  #previous >.icon:hover{
      background: #FBFBFB;
   }
-
-
-
-
-
-
-
